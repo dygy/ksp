@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td bgcolor="#FFCC33" id="x"> </td>
+        <td bgcolor="#336699" id="y"> </td>
+        <td bgcolor="#FFCC33" id="z"> </td>
+    </tr>
+    <tr>
+        <td bgcolor="#336699" id="xy"> </td>
+        <td bgcolor="#FFCC33" id="yz"> </td>
+        <td bgcolor="#336699" id="zx"> </td>
+    </tr>
+</table>
+
+<script>
+    let x= Math.round(Math.random()*10);
+    let y= Math.round(Math.random()*10);
+    let z= Math.round(Math.random()*10);
+    document.getElementById('x').innerHTML = x;
+    document.getElementById('y').innerHTML = y;
+    document.getElementById('z').innerHTML = z;
+    document.getElementById('xy').innerHTML = x*y;
+    document.getElementById('yz').innerHTML = y*z;
+    document.getElementById('zx').innerHTML = z*x;
+</script>
+</body>
+</html>
